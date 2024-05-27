@@ -77,5 +77,7 @@ public class UserService {
         String token = jwtUtil.createToken(user.getUsername(), user.getRole());
         jwtUtil.addJwtToCookie(token, res);
 
+        System.out.println("Login Success");
+
     }
 }
